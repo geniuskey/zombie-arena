@@ -96,6 +96,14 @@ body {
     }
 }
 
+.logo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-shrink: 0;
+}
+
 .logo {
     font-family: 'Black Han Sans', sans-serif;
     font-size: 1.3rem;
@@ -103,9 +111,26 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-align: center;
-    margin-bottom: 15px;
-    flex-shrink: 0;
+}
+
+.lang-select {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 4px 8px;
+    color: #aaa;
+    font-size: 0.7rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.lang-select:hover {
+    border-color: var(--accent-green);
+}
+
+.lang-select option {
+    background: #1a1a1a;
+    color: #fff;
 }
 
 .section-title {
@@ -299,6 +324,7 @@ input[type="range"]:disabled::-webkit-slider-thumb { background: #666; }
 .ranking-item.infected { background: rgba(255, 50, 50, 0.15); border-left: 2px solid var(--accent-red); }
 .ranking-item.survivor { background: rgba(50, 255, 50, 0.15); border-left: 2px solid var(--accent-green); }
 .ranking-item.winner { background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 150, 0, 0.3)); border-left: 2px solid gold; }
+.ranking-divider { border-top: 1px dashed rgba(255, 255, 255, 0.2); margin: 8px 0; }
 
 .ranking-rank { width: 20px; font-weight: bold; color: #888; }
 .ranking-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
